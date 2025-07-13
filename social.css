@@ -1,0 +1,93 @@
+@import url("global.css");
+
+@media (max-width: 480px) {
+  a {
+    font-size: 1rem !important;
+    display: inline-block !important;
+  }
+  .socialInfo {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  a {
+    text-decoration: underline;
+    font-size: 1.3rem !important;
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+.socialInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialInfoContainer a {
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.socialInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialInfoContainer i:hover a {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation-name: typingAnim;
+  animation-duration: 1s;
+  animation-timing-function: steps(19, end);
+  animation-fill-mode: forwards;
+}
+
+.lni-facebook:hover {
+  color: rgb(94, 94, 192);
+}
+
+.lni-youtube:hover {
+  color: rgb(209, 17, 17);
+}
+
+.lni-soundcloud:hover {
+  color: rgb(218, 128, 10);
+}
+
+img {
+  float: left;
+  box-shadow: 0rem 0rem 3rem rgb(255, 255, 255);
+}
+
+li {
+  font-size: 3rem;
+  list-style-type: none;
+}
+
+h1 {
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 19ch;
+  animation-name: typingAnim;
+  animation-duration: 2s;
+  animation-timing-function: steps(19, end);
+  animation-fill-mode: forwards;
+}

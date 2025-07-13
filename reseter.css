@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.introText {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+}
+
+i {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+button {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+.pageInfoContainer {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.commandLine {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  white-space: pre;
+  color: rgb(0, 255, 0);
+}
+
+.printedCommandLine {
+  font-family: "Courier New", Courier, monospace;
+  color: yellow;
+  font-weight: 500;
+}

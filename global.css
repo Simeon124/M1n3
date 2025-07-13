@@ -1,0 +1,269 @@
+@import url(reseter.css);
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  .cmdIcon
+  {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body header {
+    width: 70% !important;
+  }
+  .mainPageInfoContainer {
+    width: 15rem !important;
+  }
+  .mainPageInfoContainer button {
+    font-size: 1rem !important;
+  }
+
+  .pageInfoContainer section {
+    font-size: 1.3rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .bracket {
+  font-size: 2rem !important;
+}
+  img
+  {
+    max-width: 13rem;
+    max-height: 13rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body header {
+    width: 70% !important;
+  }
+  .mainPageInfoContainer button {
+    font-size: 1.4rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body header {
+    width: 70% !important;
+  }
+  .mainPageInfoContainer button {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: black;
+  color: white;
+}
+
+body header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0rem 0rem 1rem white;
+  border-style: solid;
+  border-top: none;
+  border-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  max-width: 95rem;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  padding-left: 2rem;
+  z-index: 9999;
+}
+
+header a {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+header a:hover {
+  color: rgb(8, 109, 104);
+}
+
+header img {
+  width: 2rem;
+  height: 2rem;
+}
+
+main {
+  animation: easeInTop 2s cubic-bezier(0.075, 0.82, 0.165, 1),
+    fadeIn 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.backVid {
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.mainPageInfoContainer {
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  width: 40rem;
+  height: fit-content;
+  border: solid;
+  margin-top: 10rem;
+}
+
+.mainPageInfoContainer h1 {
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 19ch;
+  animation-name: typingAnim;
+  animation-duration: 2s;
+  animation-timing-function: steps(19, end);
+  animation-fill-mode: forwards;
+}
+
+.mainPageInfoContainer button {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+section i {
+  font-size: 6rem !important;
+}
+
+.infoNavButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.pageInfoContainer {
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  height: fit-content;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.pageInfoContainer h1 {
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 26ch;
+  animation-name: typingAnim;
+  animation-duration: 2s;
+  animation-timing-function: steps(19, end);
+  animation-fill-mode: forwards;
+}
+
+.pageInfoContainer section {
+  font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pageInfoContainer section section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bracket {
+  margin-right: 15rem;
+  font-size: 3rem;
+}
+
+button {
+  color: white;
+  background: none;
+  font-size: 1rem;
+}
+
+button:hover {
+  animation-name: buttonGlitch;
+  animation-duration: 0.3s;
+  animation-timing-function: step-start;
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(148, 148, 211);
+}
+a:hover {
+  color: rgb(93, 93, 182);
+}
+
+@keyframes buttonGlitch {
+  10% {
+    color: pink;
+    font-size: 2.1rem;
+    text-decoration: overline;
+    border: none;
+  }
+  20% {
+    color: rgb(255, 0, 242);
+    font-size: 2.1rem;
+    margin-left: 6rem;
+    text-decoration: double;
+    border: none;
+  }
+  30% {
+    margin-right: 3rem;
+    font-size: 2.3rem;
+    color: rgb(0, 252, 42);
+    border: none;
+  }
+  40% {
+    margin-top: 10px;
+    color: rgb(238, 255, 0);
+  }
+
+  100% {
+  }
+}
+
+@keyframes typingAnim {
+  from {
+    width: 0ch;
+  }
+}
+
+@keyframes easeInTop {
+  from {
+    margin-top: 100rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+}
