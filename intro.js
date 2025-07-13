@@ -38,7 +38,7 @@ async function executeIntro() {
   await timer(3000);
   await AnimateText(launchingText[Math.floor(Math.random() * launchingText.length)]);
   await timer(1000);
-  window.location.href = "index.html"
+  window.location.href = "main.html"
 }
 
 executeIntro();
